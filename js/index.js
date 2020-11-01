@@ -1,10 +1,9 @@
 $(document).ready(function () {
     $(function(){
         $("#profile-card-header").typed({
-            strings: [ 
-                "Software Engineer",
+            strings: [ "Software Engineer",
                 "Data Scientist",
-                "CS Graduate",
+                "CS Graduate"
             ],
             typeSpeed: 0.4,
             loop: true
