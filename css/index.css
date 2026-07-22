@@ -186,7 +186,7 @@ body{
     position: absolute;
     line-height: 40px;
     top: 0;
-    width: 25%;
+    width: 20%;
     /*width: 33%;*/
     font-weight: 300;
     font-size: 1.3em;
@@ -218,14 +218,17 @@ body{
 #tab-1, #tab-1+span {
     left: 0;
 }
+#tab-5, #tab-5+span {
+    left: 20%;
+}
 #tab-2, #tab-2+span {
-    left: 25%;
+    left: 40%;
 }
 #tab-3, #tab-3+span {
-    left: 50%;
+    left: 60%;
 }
 #tab-4, #tab-4+span {
-    left: 75%;
+    left: 80%;
 }
 .tab-content {
     width: 100%;
@@ -249,9 +252,12 @@ body{
 #tab-4:checked~.tab-content #tab-content-4 {
     display: block;
 }
+#tab-5:checked~.tab-content #tab-content-5 {
+    display: block;
+}
 .effect .line {
     background: #3498DB;
-    width: 25%;
+    width: 20%;
     /*width: 33%;*/
     height: 2px;
     position: absolute;
@@ -268,16 +274,20 @@ body{
     left: 0;
 }
 
+#tab-5:checked~.line {
+    left: 20%;
+}
+
 #tab-2:checked~.line {
-    left: 25%;
+    left: 40%;
 }
 
 #tab-3:checked~.line {
-    left: 50%;
+    left: 60%;
 }
 
 #tab-4:checked~.line {
-    left: 75%;
+    left: 80%;
 }
 .inside-tab{
     padding: 10px;
@@ -308,6 +318,70 @@ body{
     text-align: center;
     text-justify: inter-word;
     padding: 10px 10px;
+}
+/**********************************/
+/************Experience************/
+/**********************************/
+.experience-list{
+    padding: 5px 15px 10px;
+}
+.exp-item{
+    position: relative;
+    padding: 0 0 22px 22px;
+    border-left: 2px solid #1abc9c;
+}
+.exp-item:last-child{
+    border-left: 2px solid transparent;
+    padding-bottom: 0;
+}
+.exp-item:before{
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #3498DB;
+    border: 2px solid #fff;
+}
+.exp-role{
+    color: #fff;
+    font-size: 1.05em;
+    font-weight: 400;
+    margin: 0;
+}
+.exp-company{
+    color: #1abc9c;
+    font-weight: 400;
+}
+.exp-meta{
+    color: #d0d0d0;
+    font-size: 0.82em;
+    margin: 2px 0 8px;
+}
+.exp-meta .exp-dot{
+    padding: 0 6px;
+    opacity: 0.6;
+}
+.exp-points{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.exp-points > li{
+    color: #e8e8e8;
+    font-size: 0.86em;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 2px 0 2px 16px;
+    position: relative;
+}
+.exp-points > li:before{
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #3498DB;
 }
 .highlight{
     text-decoration: dotted;
