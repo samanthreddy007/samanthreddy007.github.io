@@ -5,7 +5,10 @@ $(document).ready(function () {
                 "Backend & Distributed Systems",
                 "Machine Learning Enthusiast"
             ],
-            typeSpeed: 0.4,
+            typeSpeed: 70,
+            backSpeed: 35,
+            backDelay: 1500,
+            startDelay: 300,
             loop: true
         });
     });
